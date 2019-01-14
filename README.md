@@ -49,8 +49,8 @@ Follow the instructions in `Tennis.ipynb` to get started with training your own 
 In addition to the current work, we can do the following to improve performance:
 
 1. Implement the other Multi-Agent algorithms such as:
-a). Multi Agent PPO as presented in this paper (https://arxiv.org/pdf/1710.03748.pdf)
-b). Multi Agent DQN as presented in this report (http://cs231n.stanford.edu/reports/2016/pdfs/122_Report.pdf). While using MADQN, we can try various combinations of DQN algorithms and as we know the most effective one is the rainbow method. This significantly improves performance on DQN networks. 
-c). We can implement the suggestion of Gaussians mixture for action-value distribution as described in the D4PG paper along with the MAD4PG algorithm. (https://arxiv.org/pdf/1804.08617.pdf)
+    - Multi Agent PPO as presented in this paper (https://arxiv.org/pdf/1710.03748.pdf)
+    - Multi Agent DQN as presented in this report (http://cs231n.stanford.edu/reports/2016/pdfs/122_Report.pdf). While using MADQN, we can try various combinations of DQN algorithms and as we know the most effective one is the rainbow method. This significantly improves performance on DQN networks. 
+    - We can implement the suggestion of Gaussians mixture for action-value distribution as described in the D4PG paper along with the MAD4PG algorithm. (https://arxiv.org/pdf/1804.08617.pdf)
 
 2. In addition to the above papers, we can use the traditional optimizations for a deep neural network by finding out the optimal learning rates, batch sizes and other hyper parameters.
