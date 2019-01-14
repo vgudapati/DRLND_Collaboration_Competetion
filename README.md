@@ -4,6 +4,7 @@
 [image2]: https://user-images.githubusercontent.com/10624937/42135622-e55fb586-7d12-11e8-8a54-3c31da15a90a.gif "Soccer"
 
 
+
 # Project 3: Collaboration and Competition
 
 ## Project Details
@@ -12,7 +13,8 @@
 
 The objective of the project is to train the agents to play Tennis using the [Tennis](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#tennis) environment.
 
-![Trained Agent][image1]
+
+![tennis](assets/trained_agent.gif)
 ### Rewards
 In this environment, two agents control rackets to bounce a ball over a net. If an agent hits the ball over the net, it receives a reward of +0.1.  If an agent lets a ball hit the ground or hits the ball out of bounds, it receives a reward of -0.01.  Thus, the goal of each agent is to keep the ball in play.
 
