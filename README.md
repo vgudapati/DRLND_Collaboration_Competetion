@@ -44,22 +44,13 @@ The environment is considered solved, when the average (over 100 episodes) of th
 
 Follow the instructions in `Tennis.ipynb` to get started with training your own agent!  
 
-### (Optional) Challenge: Crawler Environment
+## Future work - improving agent's performance and extensions
 
-After you have successfully completed the project, you might like to solve the more difficult **Soccer** environment.
+In addition to the current work, we can do the following to improve performance:
 
-![Soccer][image2]
+1. Implement the other Multi-Agent algorithms such as:
+a). Multi Agent PPO as presented in this paper (https://arxiv.org/pdf/1710.03748.pdf)
+b). Multi Agent DQN as presented in this report (http://cs231n.stanford.edu/reports/2016/pdfs/122_Report.pdf). While using MADQN, we can try various combinations of DQN algorithms and as we know the most effective one is the rainbow method. This significantly improves performance on DQN networks. 
+c). We can implement the suggestion of Gaussians mixture for action-value distribution as described in the D4PG paper along with the MAD4PG algorithm. (https://arxiv.org/pdf/1804.08617.pdf)
 
-In this environment, the goal is to train a team of agents to play soccer.  
-
-You can read more about this environment in the ML-Agents GitHub [here](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#soccer-twos).  To solve this harder task, you'll need to download a new Unity environment.  (**Note**: Udacity students should not submit a project with this new environment.)
-
-You need only select the environment that matches your operating system:
-- Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Soccer/Soccer_Linux.zip)
-- Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Soccer/Soccer.app.zip)
-- Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Soccer/Soccer_Windows_x86.zip)
-- Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Soccer/Soccer_Windows_x86_64.zip)
-
-Then, place the file in the `p3_collab-compet/` folder in the DRLND GitHub repository, and unzip (or decompress) the file.  Next, open `Soccer.ipynb` and follow the instructions to learn how to use the Python API to control the agent.
-
-(_For AWS_) If you'd like to train the agents on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Soccer/Soccer_Linux_NoVis.zip) to obtain the "headless" version of the environment.  You will **not** be able to watch the agents without enabling a virtual screen, but you will be able to train the agents.  (_To watch the agents, you should follow the instructions to [enable a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md), and then download the environment for the **Linux** operating system above._)
+2. In addition to the above papers, we can use the traditional optimizations for a deep neural network by finding out the optimal learning rates, batch sizes and other hyper parameters.
